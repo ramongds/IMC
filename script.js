@@ -22,9 +22,8 @@ function calculator(event){
 
     weight = document.querySelector("#weight")
     height = document.querySelector("#height")
-    calcIMC = ((weight.value / (height.value**2))*10000).toFixed(1)
-    Modal.h2.innerHTML = `Seu IMC é de ${calcIMC}`
-    checker()
+    calcIMC = ((weight.value / (height.value**2))*10000).toFixed(1) 
+    checker();
 }
 
 
@@ -63,7 +62,7 @@ function reset(){
 window.addEventListener("keydown", handleKeydown)
 function handleKeydown(event){
     if( event.key ==="Enter"){
-        checker()
+        calculator()
     }
 }
 

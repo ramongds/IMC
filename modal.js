@@ -15,9 +15,10 @@ export const Modal = {
         this.divmodal.classList.add("close")
     },
 
-
+    
     classification(){
-        
+        this.h2.innerHTML = `Seu IMC é de ${calcIMC}`
+
         if(calcIMC < 18.5){
             this.span.innerHTML = `Você está abaixo do peso, procure um médico ou nutricionista.`
         } else if(calcIMC >= 18.5 && calcIMC < 25) {
